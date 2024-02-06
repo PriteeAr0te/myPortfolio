@@ -33,7 +33,7 @@ const Navbar = () => {
           <li><a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' href="/education">Education</a></li>
         </ul>
         <div className='flex justify-between items-center'>
-          <a className='bg-slate-950 rounded-3xl border-indigo-900 border-2 hover:bg-indigo-500 hover:text-indigo-100 text-indigo-600 font-semibold p-2 px-3 cursor-pointer sm:mr-5'>Github Profile</a>
+          <a className='bg-slate-950 rounded-3xl border-indigo-900 border-2 hover:bg-indigo-500 hover:text-indigo-100 text-indigo-600 font-semibold p-2 px-3 cursor-pointer sm:mr-5' target="_blank" rel="noopener noreferrer" href='https://github.com/PriteeAr0te'>Github Profile</a>
           <div className='md:hidden m-2 sm:ml-5 sm:mx-3' onClick={toggleMenu}>
             <i className={`fa-solid fa-bars text-2xl text-white block ${menuOpen ? 'hidden' : 'block'}`}></i>
           </div>
