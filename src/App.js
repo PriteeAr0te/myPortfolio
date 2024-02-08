@@ -7,9 +7,20 @@ import Experience from './Components/Experience';
 import Projects from './Components/Projects';
 import Education from './Components/Education';
 import Contact from './Components/Contact';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 function App() {
+  const[mode, setMode] = useState('light');
+  const toggleMode = () =>{
+    if(mode === 'light'){
+      setMode('dark');
+    }
+    else{
+      setMode('light');
+
+    }
+  } 
+
   const heroRef = useRef(null);
   const skillsRef = useRef(null);
   const projectsRef = useRef(null);
@@ -19,6 +30,7 @@ function App() {
   return (
    <div>
      <Navbar
+     mode={mode} toggleMode ={toggleMode}
      heroRef={heroRef}
      skillsRef={skillsRef}
      projectsRef={projectsRef}
@@ -27,22 +39,23 @@ function App() {
      contactRef={contactRef}
      />
      <div ref={heroRef}>
-       <Hero/>
+       <Hero  mode={mode}/>
       </div>
       <div ref={skillsRef}>
-       <Skills/>
+       <Skills  mode={mode}/>
       </div>
       <div ref={projectsRef}>
-       <Projects/>
+       <Projects  mode={mode}/>
       </div>
       <div ref={experienceRef}>
-       <Experience/>
+       <Experience  mode={mode}/>
       </div>
       <div ref={educationRef}>
-       <Education/>
+       <Education  mode={mode}/>
       </div>
       <div ref={contactRef}>
        <Contact
+        mode={mode}
         heroRef={heroRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}

@@ -1,7 +1,8 @@
-
 import React, { useState } from 'react';
+import { MdLightMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
 
-const Navbar = ({ heroRef, skillsRef, projectsRef, experienceRef, educationRef, contactRef }) => {
+const Navbar = ({ heroRef, skillsRef, projectsRef, experienceRef, educationRef, contactRef, props }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -25,26 +26,30 @@ const Navbar = ({ heroRef, skillsRef, projectsRef, experienceRef, educationRef, 
         </div>
         <ul className={`md:flex menu-container ${menuOpen ? 'flex flex-col absolute top-full bg-slate-950 bg-opacity-80 h-75 py-4 w-full' : 'hidden'}`}>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={() => scrollToRef(heroRef)}>About</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={() => scrollToRef(heroRef)}>About</a>
           </li>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(skillsRef)}>Skills</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(skillsRef)}>Skills</a>
           </li>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(projectsRef)}>Projects</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(projectsRef)}>Projects</a>
             </li>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(experienceRef)}>Experience</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(experienceRef)}>Experience</a>
             </li>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(educationRef)}>Education</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(educationRef)}>Education</a>
             </li>
           <li>
-            <a className='text-white font-semibold ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(contactRef)}>Contact</a>
+            <a className='text-white font-medium ml-3 mx-2 hover:text-indigo-600 hover:border-2 hover:border-indigo-900 hover:py-2 hover:px-3 hover:rounded-2xl' onClick={()=> scrollToRef(contactRef)}>Contact</a>
             </li>
         </ul>
+        <div className='px-2 p-1 mx-2 m-1'>
+          {/* {props.mode === 'dark'? <MdLightMode /> : <MdOutlineLightMode />} */}
+          <MdLightMode onClick={props.toggleMode}/>
+        </div>
         <div className='flex justify-between items-center'>
-          <a className='bg-slate-950 rounded-3xl border-indigo-900 border-2 hover:bg-indigo-500 hover:text-indigo-100 text-indigo-600 font-semibold p-2 px-3 cursor-pointer sm:mr-5' target="_blank" rel="noopener noreferrer" href='https://github.com/PriteeAr0te'>Github Profile</a>
+          <a className='bg-slate-950 rounded-3xl border-indigo-900 border-2 hover:bg-indigo-500 hover:text-indigo-100 text-indigo-600 font-semibold p-1 px-3 cursor-pointer sm:mr-3' target="_blank" rel="noopener noreferrer" href='https://github.com/PriteeAr0te'>Github Profile</a>
           <div className='md:hidden m-2 sm:ml-5 sm:mx-3' onClick={toggleMenu}>
             <i className={`fa-solid fa-bars text-2xl text-white block ${menuOpen ? 'hidden' : 'block'}`}></i>
           </div>
