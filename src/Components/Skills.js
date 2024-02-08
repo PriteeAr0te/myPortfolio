@@ -20,13 +20,13 @@ import postmanLogo from './Icons/postman.png';
 
 const Skills = () => {
     return (
-        <div className='w-full  bg-gradient-to-b from-indigo-950 to-slate-950 p-8 min-h-screen pt-[58px]'>
-            <h1 className='w-full text-center text-5xl font-bold text-slate-200 tracking-tight hover:tracking-wide'> Skills </h1>
-            <p className='text-slate-400 text-center w-full text-xl mt-5 font-medium'>Mastering a skill is like adding a new color to the palette of your life.</p>
+        <div className='w-full  bg-gradient-to-b from-indigo-950 to-slate-950 p-8 min-h-screen pt-[58px] font-montserrat'>
+            <h1 className='w-full text-center text-5xl font-bold text-slate-200 tracking-wide hover:tracking-normal  font-playfair-display'> Skills </h1>
+            <p className='text-slate-400 text-center w-full text-xl mt-5 font-medium font-source-serif"'>Mastering a skill is like adding a new color to the palette of your life.</p>
             <div className='flex flex-col md:flex-row md:flex-wrap justify-center items-center mt-7'>
                 <div className='bg-gray-900 border-2 border-indigo-700 md:w-[500px] md:h-[400px] rounded-xl m-3 p-5 text-center transition duration-300 ease-in-out transform hover:bg-gray-800 hover:shadow-lg'>
                     <div className='h-full'>
-                        <h2 className='text-2xl text-slate-200 font-medium'>Frontend</h2>
+                        <h2 className='text-2xl text-slate-200 font-medium font-playfair-display'>Frontend</h2>
                         <div className='flex flex-wrap justify-center py-3 items-center'>
                             <div className='bg-gray-900 border-slate-500 rounded-lg border-2 m-2 p-2 px-3 flex justify-between'>
                             <img className="h-7 m-1" src={reactLogo} alt='' />
@@ -61,7 +61,7 @@ const Skills = () => {
                 </div>
                 <div className='bg-gray-900 border-2 border-indigo-700 md:w-[500px] md:h-[400px] rounded-xl m-3 p-5  text-center transition duration-300 ease-in-out transform hover:bg-gray-800 hover:shadow-lg'>
                     <div className='h-full'>
-                        <h2 className='text-2xl text-slate-200 font-medium'>Backend</h2>
+                        <h2 className='text-2xl text-slate-200 font-medium font-playfair-display'>Backend</h2>
                         <div className='flex flex-wrap justify-center py-3 items-center'>
                             <div className='bg-gray-900 border-slate-500 rounded-lg border-2 m-2 p-2 px-3 flex justify-between'>
                             <img className="h-7 m-1 mix-blend-normal text-slate-300" src={nodejsLogo} alt='' />
@@ -89,7 +89,7 @@ const Skills = () => {
                 </div>
                 <div className='bg-gray-900 border-2 border-indigo-700 md:w-[500px] md:h-[400px] rounded-xl m-3 p-5 h-auto text-center transition duration-300 ease-in-out transform hover:bg-gray-800 hover:shadow-lg'>
                     <div className='h-full'>
-                        <h2 className='text-2xl text-slate-200 font-medium'>Others</h2>
+                        <h2 className='text-2xl text-slate-200 font-medium font-playfair-display'>Others</h2>
                         <div className='flex flex-wrap justify-center py-3 items-center'>
                             <div className='bg-gray-900 border-slate-500 rounded-lg border-2 m-2 p-2 px-3 flex justify-between'>
                             <img className="h-7 m-1" src={githubLogo} alt='' />
