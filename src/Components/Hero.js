@@ -44,7 +44,7 @@ const Hero = () => {
             className="bg-indigo-500 rounded-2xl border-indigo-400 border-2 hover:bg-gradient-to-r from-indigo-500 to-blue-500 text-indigo-100  font-medium p-3 px-8 cursor-pointer font-playfair-display"
             target="_blank"
             rel="noopener noreferrer"
-            href='https://drive.google.com/file/d/1pR1tRdB1B3RSYAwU9cQfHQJ52vyvm8nL/view?usp=sharing"'
+            href="https://drive.google.com/file/d/17nI9lZIV_vi_TXv5RSrAHv6IlqZRjdYk/view?usp=sharing"
           >
             Check Resume
             <i className="fa-solid fa-circle-chevron-right text-indigo-100 pl-1"></i>
