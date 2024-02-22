@@ -192,7 +192,7 @@ const Contact = ({
               </div>
               <div className="mx-3 mb-5 text-2xl text-slate-200 hover:text-indigo-500">
                 <a
-                  href="www.linkedin.com/in/arote-pritee-a53128230"
+                  href="https://www.linkedin.com/in/pritee-arote-a53128230"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -14,7 +14,7 @@ const Projects = () => {
         </p>
       </div>
       <div className="md:flex justify-center flex-wrap my-10 px-5 md:px-7">
-        <div className=" box bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 p-3 pb:4 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        <div className=" box bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 p-3 pb:4 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap justify-center my-2 mb-2 font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
@@ -69,7 +69,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" box bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 p-3 pb:4 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        {/* <div className=" box bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 p-3 pb:4 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap justify-center my-2 mb-2 font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
@@ -123,9 +123,64 @@ const Projects = () => {
               </div>
             </a>
           </div>
+        </div> */}
+
+        <div className=" box bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 p-3 pb:4 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
+          <div className="flex flex-wrap justify-center my-2 mb-2 font-semibold  text-violet-600">
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">
+              Bootstrap
+            </span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">
+              TailwindCSS
+            </span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">
+              Javascript
+            </span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">Reactjs</span>
+            <span className="bg-violet-600/5 px-2 rounded-xl m-1">Redux</span>
+          </div>
+          <div className="text-slate-300 mt-4 text-xl font-semibold font-playfair-display">
+            GoShop
+          </div>
+          <div className="text-zinc-400/60 mt-3 font-medium text-md font-source-serif">
+            Built an online store with React.js, using Redux to add features
+            like price and ratings filters for products, along with a search
+            function. Made shopping easier with clear navigation and quick
+            filtering options.
+          </div>
+          <div className="flex justify-between mt-auto mb-1.5">
+            <a
+              className="hover:cursor-pointer"
+              href="https://github.com/PriteeAr0te/eCommerce-"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="text-white mt-auto mb-2 border-2 border-indigo-600 font-semibold hover:text-indigo-600 px-2.5 py-0.5 rounded-lg">
+                View <i className="fa-brands fa-github p-2"></i>
+              </div>
+            </a>
+
+            <a
+              href="https://main--e-commerce-pritee.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-row justify-between hover:cursor-pointer"
+            >
+              <div className="text-white mt-auto mb-2 border-2 border-indigo-600 font-semibold hover:text-indigo-600 px-2.5 py-1.5 rounded-lg flex items-center">
+                View
+                <img
+                  className="h-[20px] px-2"
+                  src={netlifyIcon}
+                  alt="Netlify Icon"
+                />
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 pb-4 p-3 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 pb-4 p-3 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap my-2 justify-center font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
@@ -182,7 +237,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 pb-4 p-3 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 pb-4 p-3 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap my-2 justify-center font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
@@ -232,7 +287,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 pb-4 p-3 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 pb-4 p-3 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap my-2 justify-center font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
@@ -280,7 +335,7 @@ const Projects = () => {
             </a>
           </div>
         </div>
-        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-3 pb-4 p-3 md:px-5 transition duration-300 ease-in-out transform hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col">
+        <div className="bg-slate-950 lg:w-[30%] lg:h-[500px] rounded-xl m-4 pb-4 p-3 md:px-5 hover:shadow-lg hover:-translate-y-2 hover:transition-all hover:duration-200 overflow-hidden hover:shadow-opacity-100 hover:rounded-2xl border-emerald-600 border-2 flex flex-col transform transition-transform hover:scale-110">
           <div className="flex flex-wrap justify-center my-2 font-semibold  text-violet-600">
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">HTML</span>
             <span className="bg-violet-600/5 px-2 rounded-xl m-1">CSS</span>
