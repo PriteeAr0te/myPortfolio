@@ -114,16 +114,16 @@ const Contact = ({
             <span className="text-2xl text-indigo-500 font-playfair-display">
               Pritee Arote
             </span>
-            <div className="flex w-full justify-start mt-1.5">
+            {/* <div className="flex w-full justify-start mt-1.5">
               <i className="fa-solid fa-phone-flip text-indigo-500 text-md mt-1.5"></i>
               <p className="text-white text-md ml-2">+91 9322794841</p>
-            </div>
-            <div className="flex w-full justify-start mt-2">
+            </div> */}
+            {/* <div className="flex w-full justify-start mt-2">
               <i className="fa-solid fa-envelope text-indigo-500 text-md mt-1.5"></i>
               <p className="text-white text-md ml-2">
                 arotepritee111@gmail.com
               </p>
-            </div>
+            </div> */}
             <div className="flex w-full justify-start mt-2">
               <i className="fa-solid fa-map-location-dot text-indigo-500 text-md mt-1.5"></i>
               <p className="text-white text-md ml-2">Pune, Baner - 411045</p>
